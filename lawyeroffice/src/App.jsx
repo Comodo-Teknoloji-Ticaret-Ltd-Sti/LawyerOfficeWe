@@ -8,7 +8,6 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import DundarAI from './components/DundarAI';
 
-// Main App Component
 function App() {
   return (
     <div className="min-h-screen bg-white">
