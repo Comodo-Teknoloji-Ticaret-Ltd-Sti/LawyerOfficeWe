@@ -36,11 +36,10 @@ function App() {
         }
       `}</style>
 
-      <Header />
-      <Routes>
+      <Header />      <Routes>
         <Route path="/" element={<MainContent />} />
       </Routes>
-      <Footer />    </div>
+      <Footer /></div>
     </HashRouter>
   );
 }
