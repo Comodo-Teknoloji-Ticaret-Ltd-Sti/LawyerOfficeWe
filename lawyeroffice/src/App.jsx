@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -8,10 +9,23 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import DundarAI from './components/DundarAI';
 
+function MainContent() {
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <DundarAI />
+      <ServicesSection />
+      <TeamSection />
+      <ContactSection />
+    </>
+  );
+}
+
 function App() {
   return (
     <div className="min-h-screen bg-white">
-      <style >{`
+      <style>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(10px); }
           to { opacity: 1; transform: translateY(0); }
@@ -22,14 +36,12 @@ function App() {
       `}</style>
 
       <Header />
-      <HeroSection />
-      <AboutSection />
-      <DundarAI />
-      <ServicesSection />
-      <TeamSection />
-      <ContactSection />
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+      </Routes>
       <Footer />
     </div>
   );
 }
+
 export default App;
