@@ -141,4 +141,4 @@ Please change the parent <Route path="${X}"> to <Route path="${X==="/"?"*":`${X}
         .animate-fade-in {
           animation: fade-in 0.3s ease-out;
         }
-      `}),b.jsx(Pv,{}),b.jsx(Vy,{children:b.jsx(fh,{path:"/",element:b.jsx(v1,{})})}),b.jsx(m1,{}),"    "]})})}I0.createRoot(document.getElementById("root")).render(b.jsx(M.StrictMode,{children:b.jsx(dh,{children:b.jsx(g1,{})})}));
+      `}),b.jsx(Pv,{}),"      ",b.jsx(Vy,{children:b.jsx(fh,{path:"/",element:b.jsx(v1,{})})}),b.jsx(m1,{})]})})}I0.createRoot(document.getElementById("root")).render(b.jsx(M.StrictMode,{children:b.jsx(dh,{children:b.jsx(g1,{})})}));
