@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -24,8 +24,7 @@ function MainContent() {
 
 function App() {
   return (
-    <HashRouter>
-      <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
       <style>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(10px); }
@@ -36,11 +35,12 @@ function App() {
         }
       `}</style>
 
-      <Header />      <Routes>
+      <Header />
+      <Routes>
         <Route path="/" element={<MainContent />} />
       </Routes>
-      <Footer /></div>
-    </HashRouter>
+      <Footer />
+    </div>
   );
 }
 
